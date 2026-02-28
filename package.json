@@ -1,0 +1,31 @@
+{
+  "name": "pageindex-rag",
+  "version": "1.0.0",
+  "description": "Vectorless, reasoning-based RAG for PDFs — hierarchical document indexing with LLM-guided tree search. TypeScript port of PageIndex.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf dist",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "keywords": ["rag", "pdf", "vectorless", "pageindex", "document-indexing", "tree-search", "llm", "retrieval-augmented-generation"],
+  "author": "FutureSpeak AI <noreply@futurespeak.ai>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FutureSpeakAI/pageindex-rag.git"
+  },
+  "engines": { "node": ">=18.0.0" },
+  "dependencies": {
+    "openai": "^4.0.0",
+    "gpt-tokenizer": "^2.1.0",
+    "pdfjs-dist": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "rimraf": "^5.0.0",
+    "typescript": "^5.5.0"
+  }
+}
