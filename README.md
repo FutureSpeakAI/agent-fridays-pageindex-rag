@@ -1,3 +1,5 @@
+> **This project now lives on in [Agent-Friday](https://github.com/FutureSpeakAI/Agent-Friday), archived 2026-10-11.**
+
 # PageIndex RAG
 
 Vectorless, reasoning-based RAG for PDFs. Instead of embedding chunks into a vector database, PageIndex builds a hierarchical tree from the document structure and uses LLM reasoning to navigate it — achieving 98.7% accuracy on FinanceBench.
